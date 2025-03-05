@@ -3,11 +3,11 @@ using ScreenSound.Menus;
 using ScreenSound.Modelos;
 
 Banda djonga = new Banda("Djonga");
-djonga.Adicionarnotas(new Avaliacao(10));
-djonga.Adicionarnotas(new Avaliacao(7));
-djonga.Adicionarnotas(new Avaliacao(8));
+// djonga.Adicionarnotas(new Avaliacao(10));
+// djonga.Adicionarnotas(new Avaliacao(7));
+// djonga.Adicionarnotas(new Avaliacao(8));
 
-Banda bk = new("BK'");// posso criar uma nova sem declarar que é uma banda novamente 
+Banda bk = new("BK");// posso criar uma nova sem declarar que é uma banda novamente 
 
 //List<string> listaDasBandas = new List<string> { "U2", "The Beatles", "Calypso"};  
 Dictionary<string, Banda> bandasRegistradas = new();
@@ -19,7 +19,8 @@ opcoes.Add(1, new MenuRegistrarBanda());
 opcoes.Add(2, new MenuRegistrarAlbumDeUmaBanda());
 opcoes.Add(3, new MenuMostrarBandasRegistradas());
 opcoes.Add(4, new MenuAvaliarBanda());
-opcoes.Add(5, new MenuExibirDetalhes());
+opcoes.Add(5, new MenuAvaliarAlbum());
+opcoes.Add(6, new MenuExibirDetalhes());
 opcoes.Add(0, new MenuSair());
 
 
@@ -46,7 +47,8 @@ void ExibirOpcoesDoMenu()
     Console.WriteLine("Digite 2 para registrar o álbum de uma banda");
     Console.WriteLine("Digite 3 para mostrar todas as bandas");
     Console.WriteLine("Digite 4 para avaliar uma banda");
-    Console.WriteLine("Digite 5 para exibir detalhes de uma banda");
+    Console.WriteLine("Digite 5 para avaliar um álbum");
+    Console.WriteLine("Digite 6 para exibir detalhes de uma banda");
     Console.WriteLine("Digite 0 para sair");
 
     Console.Write("\nDigite a sua opção: ");
