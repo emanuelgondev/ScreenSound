@@ -12,7 +12,7 @@ internal class Menu
         Console.WriteLine(asteriscos + "\n");
     }
 
-    internal virtual void Executar(Dictionary<string, Banda> bandasRegistradas)
+    public virtual void Executar(Dictionary<string, Banda> bandasRegistradas)
     {
         Console.Clear();
     }
